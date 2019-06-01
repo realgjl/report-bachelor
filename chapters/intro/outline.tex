@@ -1,0 +1,18 @@
+\section{Thesis Outline} %1.2
+This project consists of two parts: PART I Algorithms and PART II Test Case Scenario (Nordic).\\
+
+\sys{Part I} focuses on the task of understanding and building Secondary Frequency Control (SFC) model and PI control algorithm so that we are able to test our cases in \sys{Part II}.
+
+\begin{description}
+    \item In Chapter~\ref{Chapter2}, we present an overview of Frequency Control, including Primary Frequency Control (PFC), Secondary Frequency Control (SFC) and Tertiary Frequency Control (TFC). 
+    \item In Chapter~\ref{Chapter3}, we formally focus on the physical theory behind Secondary Frequency Control (SFC) which is the base of the whole project. We also briefly discuss PID control and argue that we should use PI control to reduce the probability of risk. We then discuss how to build a communication layer on top of an existing smart grid simulator and how to design a centralised controller to stabilise the system. We also describe the algorithms we built, the tuning methodology, and some implementations. Finally, we define the acceptable results based on the official report from Nordic, and with that, we build our own analytical tools. With these tools, we can plot a 2D and even a 3D diagram, find the eligible results and give feedback to our controller in PART II.
+\end{description}
+
+\sys{Part II} views testing in a specific test case scenario (Nordic) as an important part such as the impact of different time delays. Detailedly, 
+
+\begin{description}
+    \item In Chapter~\ref{Chapter4}, we focus on testing the system in a low time delay and discuss how to choose an appropriate generator as a breaker and how to tune the range of  gain. Before simulating, we predict some expected results based on the physical theory behind Secondary Frequency Control (SFC). We then present a comprehensive evaluation on the simulation results through detailed description and comparison. We also discuss why my prediction had deviation or missing. Then, we show a 2d plot and a simulation result. Lastly, we add the element of ramp rate to make sure a scientifically correct.
+    \item In Chapter~\ref{Chapter5}, we discuss the impact of different time delays. We increase the delay and use the range of kp and ki in Chapter~\ref{Chapter4}. We also explain why we think it is reasonable to continue using the range of gain in Chapter~\ref{Chapter4}. Then we predict the simulation results based on both the physical theory behind Secondary Frequency Control (SFC) and the results in Chapter~\ref{Chapter4}. Then we present a comprehensive evaluation on the complicated simulation results. We describe the results with a plotted 3d graph. We discuss some unpredictable results and some seemingly irregular data. We discuss the risk of the generators, like what we do in Chapter~\ref{Chapter4}, and how to remove unacceptable results. We  also show a 3d plot and a best simulation result. Finally, we add the element of ramp rate to make sure a scientifically correct.
+    \item In Chapter~\ref{Chapter6}, we test the Emergency Control and discuss the impact of different time delays. We firstly define Emergency Control. We predict some results based on Secondary Frequency Control (SFC) and the conclusions in Chapter~\ref{Chapter4} and Chapter~\ref{Chapter5}. After implementing and analysing the results, we discuss why my predictions are “wrong”. Finally, we add the element of ramp rate to make sure a scientifically correct.
+\end{description}
+We finally conclude in Chapter~\ref{Chapter7}. 

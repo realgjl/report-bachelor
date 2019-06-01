@@ -1,0 +1,9 @@
+\prefacesection{Abstract}
+
+Maintaining the frequency at the nominal value in the power grid is one of the most elusive and long-standing challenges in smart grids. This project tackles the problem of frequency changes: how to design an algorithm to build a centralised Secondary Frequency Control (SFC) and to analyse the performance of the smart gird. On the one hand, we think that our SFC algorithm can maintain the frequency. On the other hand, we would need an efficient and concise strategy to analyse the performance of the system if we want to build an optimal controller to ensure that the frequency of the electricity network is always restored to its nominal value when disturbances occur in the system.\\
+
+In this project, we focus on PI Control: the most common control algorithm by far and the standard algorithm in SFC. Compared to traditional grids without SFC, this algorithm has proven to be more effective in maintaining the frequency.\\
+
+This project consists of two parts. In the first part, we aim to understand the physical theory behind SFC and PI control and present our efforts at building effective SFC models. 
+
+In the second part of this project, we test our algorithm in RAMSES~\footnote{RAMSES is a time-domain dynamic simulator for future electric power systems. RAMSES document: \href{https://ramses.paristidou.info}{https://ramses.paristidou.info}}\cite{aristidou2015parallel}, \cite{aristidou2014schur} based on Nordic Grid scenario. In particular, 1) how we test our system in a low time delay; 2) how we analyse the impact of different time delays; 3) how we analyse Emergency Control.
